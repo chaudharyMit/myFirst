@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('7.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+h1{
+    text-align: center;
+    font-size: 10rem;
+    position: relative;
+    text-transform: uppercase;
+}
+h1::before{
+    content: 'Chaudhary..';
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: gold;
+    width: 10%;
+    border-right: 2px solid gold;
+    overflow: hidden;
+    animation: width_main 2s linear infinite ;
+}
+@keyframes width_main {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
